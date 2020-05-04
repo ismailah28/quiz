@@ -16,6 +16,10 @@ const getNextIdx = (idx = -1, length, direction) => {
   }
 };
 
+const shuffle = array => {
+  return array.sort(() => Math.random() - 0.5);
+};
+
 let idx;
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -74,7 +78,7 @@ const MAX_QUESTIONS = 5;
 startGame = () => {
   questionCounter = 0;
   score = 0;
-  availableQuesions = [...questions];
+  availableQuesions = [...shuffle(questions)];
 
   getNewIndexAndRenderQuestion("next");
 };
