@@ -75,7 +75,6 @@ span.total,
   position: relative;
   border: 2px solid var(--btn-outline);
   border-radius: 10px;
-  padding: 1rem;
   margin: 0.5rem 0;
   background: transparent;
   transition: transform 0.2s ease-in-out;
@@ -99,6 +98,7 @@ span.total,
 
 .option-group .choice-text {
   margin-left: 10%;
+  padding: 1rem;
 }
 
 .option-group:hover,
