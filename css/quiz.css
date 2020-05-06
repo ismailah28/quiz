@@ -1,0 +1,142 @@
+:root {
+  --primary-background-color: #252c4a;
+  --primary-color: #f4f8ff;
+  --secondary-color: #8c93ba;
+  --secondary-background-color: #407ce8;
+  --btn-outline: #26476a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--primary-background-color);
+  color: var(--primary-color);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#notification {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#notification::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  border-bottom: 2px dotted rgba(141, 148, 187, 0.2);
+}
+
+#counter p,
+a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+span.total,
+.slash {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+#question {
+  width: 100%;
+  /* height: 60vh; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.option-group {
+  position: relative;
+  border: 2px solid var(--btn-outline);
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  background: transparent;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.option-group .prefix {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  background: var(--btn-outline);
+  color: var(--primary-color);
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  text-transform: uppercase;
+}
+
+.option-group .choice-text {
+  margin-left: 10%;
+  padding: 1rem;
+}
+
+.option-group:hover,
+.option-group:focus {
+  transform: scale(1.01);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 0;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  opacity: 0.7;
+}
+
+.correct {
+  background: green;
+}
+
+.incorrect {
+  background: red;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}

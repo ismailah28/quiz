@@ -1,0 +1,42 @@
+:root {
+  --primary-background-color: #252c4a;
+  --primary-color: #f4f8ff;
+  --secondary-color: hsl(231, 25%, 64%);
+  --secondary-background-color: #407ce8;
+  --btn-outline: #26476a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--primary-background-color);
+  color: var(--primary-color);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  background: var(--secondary-background-color);
+  margin-top: 2rem;
+}

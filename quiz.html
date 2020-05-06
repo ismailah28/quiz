@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/quiz.css" />
+    <title>Quiz | Play</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="quiz">
+        <div id="notification">
+          <div id="counter">
+            <a id="home" href="/index.html">Home</a>
+          </div>
+          <div id="counter">
+            <p>
+              Score: <span id="score" class="count">0</span
+              ><span class="slash">/</span
+              ><span id="count" class="total">0</span>
+            </p>
+          </div>
+        </div>
+        <div id="question">
+          <h2 class="question-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+            delectus autem, mollitia magni dolor fugiat.
+          </h2>
+          <div class="options">
+            <div class="option-group">
+              <p class="prefix">A</p>
+              <p class="choice-text" data-number="1">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="option-group">
+              <p class="prefix">B</p>
+              <p class="choice-text" data-number="2">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="option-group">
+              <p class="prefix">C</p>
+              <p class="choice-text" data-number="3">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="option-group">
+              <p class="prefix">D</p>
+              <p class="choice-text" data-number="4">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <!-- <button id="prev" class="btn">Previous</button> -->
+          <button id="next" class="btn">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>
