@@ -102,7 +102,7 @@ getNewIndexAndRenderQuestion = direction => {
   if (questionCounter > 5) {
     next.disabled = true;
     alert(`Game Over! \nYou scored ${score} out of 5.`);
-    return window.location.assign("/quiz/index.html");
+    return window.location.assign("https://ismailah28.github.io/quiz/index.html");
   }
 
   choices.forEach(choice => {
